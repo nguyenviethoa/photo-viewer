@@ -1,5 +1,5 @@
 import * as React from "react";
-import { requireNativeComponent, processColor, Platform, View } from "react-native";
+import { requireNativeComponent, processColor, Platform, View, Text } from "react-native";
 import * as PropTypes from "prop-types";
 const resolveAssetSource = require("react-native/Libraries/Image/resolveAssetSource");
 const ImageSourcePropType = require("react-native/Libraries/Image/ImageSourcePropType");
@@ -44,7 +44,12 @@ class MerryPhotoView extends React.Component {
         if (initial > dataCopy.length) {
             startPosition = dataCopy.length;
         }
-        return (<RNMerryPhotoView {...props} initial={startPosition} data={transformData}/>);
+        return (
+        <View>
+          <Text> test modification </Text>
+          <RNMerryPhotoView {...props} initial={startPosition} data={transformData}/>
+        </View>
+        );
     }
 }
 MerryPhotoView.propTypes = {

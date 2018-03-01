@@ -47,7 +47,7 @@ class MerryPhotoView extends React.Component {
         return (
         <View>
           <Text> test modification </Text>
-          <RNMerryPhotoView {...props} initial={startPosition} data={transformData}/>
+          // <RNMerryPhotoView {...props} initial={startPosition} data={transformData}/>
         </View>
         );
     }
